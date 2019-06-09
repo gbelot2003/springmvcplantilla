@@ -12,6 +12,7 @@
 			${costumer.lastName}</i>
 	</div>
 	<div>Free Passes: ${costumer.freePass}</div>
-
+	
+	<div>Postal Code: ${costumer.postalCode}</div>
 </body>
 </html>
