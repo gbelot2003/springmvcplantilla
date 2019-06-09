@@ -25,14 +25,14 @@ public class CostumersController {
 	@RequestMapping("/")
 	public ModelAndView show(Model model) {
 		ModelAndView mv = new ModelAndView("costumers/index");
-		model.addAttribute("customer", new Costumer());
+		model.addAttribute("costumer", new Costumer());
 		return mv;
 	}
 
 	@RequestMapping("/store")
-	public String store(@ModelAttribute("customer") @Valid Costumer costumer, BindingResult results) {
-		System.out.println(results.getErrorCount());
+	public String store(@ModelAttribute("costumer") @Valid Costumer costumer, BindingResult results) {
 		if (results.hasErrors()) {
+			System.out.println(results.getErrorCount());
 			return "costumers/index";
 		}
 		return "costumers/confirmation";
