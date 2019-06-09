@@ -7,6 +7,11 @@
 <title>Costumer Confirmation Page</title>
 </head>
 <body>
-	<i>The Customer is confirmed: ${ customer.firstName } - ${ customer.lastName }</i>
+	<div>
+		<i>The Customer is confirmed: ${costumer.firstName} -
+			${costumer.lastName}</i>
+	</div>
+	<div>Free Passes: ${costumer.freePass}</div>
+
 </body>
 </html>
